@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>採用情報ページ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      display: flex;
+      background-color: #f8f8f8;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 30px 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .nav-item {
+      margin: 10px 0;
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+    }
+
+    .nav-item:hover {
+      color: white;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .hero {
+      background-color: #e0e0e0;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .button-group a {
+      margin-right: 10px;
+      color: #007acc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>メニュー</h2>
+    <a class="nav-item" href="#">ホーム</a>
+    <a class="nav-item" href="#">会社</a>
+    <a class="nav-item" href="#">仕事</a>
+    <a class="nav-item" href="#">社員</a>
+    <a class="nav-item" href="#">職場</a>
+    <a class="nav-item" href="#">選考</a>
+    <div style="margin-top: 20px;">
+      <a class="nav-item" href="#">募集要項</a>
+      <a class="nav-item" href="#">カジュアル面談</a>
+      <a class="nav-item" href="#">エントリー</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="hero">ベイジの採用情報</div>
+
+    <div class="section">
+      <p>創業16年、社員48名、フルリモート・出社どちらもOKで、地方在住の社員も多数です（2025年7月現在）。</p>
+      <p>採用もBtoBに強いコンサル型のウェブ制作会社です。現在は「ウェブ制作の次」の形態を目指しています。</p>
+      <p>「人生100年時代に適応できる強い人になる」を人事テーマとして、仕事や環境を整備しています。</p>
+    </div>
+
+    <div class="section">
+      <h3>現在7職種で募集中</h3>
+      <table>
+        <tr>
+          <th>職種</th>
+          <th>概要</th>
+          <th>関連リンク</th>
+        </tr>
+        <tr>
+          <td>コンサルタント</td>
+          <td>ウェブサイトの戦略立案、顧客との議論・提案</td>
+          <td class="button-group">
+            <a href="#">職種紹介</a>
+            <a href="#">募集要項</a>
+            <a href="#">面談</a>
+            <a href="#">エントリー</a>
+          </td>
+        </tr>
+        <tr>
+          <td>採用コンサルタント</td>
+          <td>採用戦略支援、マーケティング事業推進</td>
+          <td class="button-group">
+            <a href="#">募集要項</a>
+            <a href="#">面談</a>
+            <a href="#">エントリー</a>
+          </td>
+        </tr>
+        <!-- その他の職種も同じように追加 -->
+      </table>
+    </div>
+  </div>
+</body>
+</html>
